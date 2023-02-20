@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US" class="has-background-white" id="htmlTag">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Wordle</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <audio autoplay loop>
+        <source src="audio.mp3" type="audio/mpeg" loop="true" >
+    </audio>
+    <nav class="navbar py-3 px-3 is-light has-text-primary" id="Bar">
+        <div class="navbar-menu">
+            <div class="navbar-item center has-text-dark" id="wordle">
+                WORDLE
+            </div>
+            <div class="navbar-end ">
+                <a class=" icon is-large " id="ChangeMode">&#9681;</a>
+                <a class=" icon is-large " id="hint">&#63;</a>
+                <a class=" icon is-large " id="data">&#9432;</a>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <nav class="" id="ID">
+        <div class="is-dark has-text-primary px-8" id="leftTable">
+            <table class="container">
+                <tr class="row">
+                    <td class="cell 1"><input class="input" id="0" type="text " maxlength="1 " onkeyup="moveClick(this,'1')"></td>
+                    <td class="cell 1"><input class="input" id="1" type="text " maxlength="1 " onkeyup="moveClick(this,'2')"></td>
+                    <td class="cell 1"><input class="input" id="2" type="text " maxlength="1 " onkeyup="moveClick(this,'3')"></td>
+                    <td class="cell 1"><input class="input" id="3" type="text " maxlength="1 " onkeyup="moveClick(this,'4')"></td>
+                </tr>
+                <tr class="row ">
+                    <td class="cell "><input class="input" id="4" type="text " maxlength="1 " onkeyup="moveClick(this,'5')"></td>
+                    <td class="cell "><input class="input" id="5" type="text " maxlength="1 " onkeyup="moveClick(this,'6')"></td>
+                    <td class="cell "><input class="input" id="6" type="text " maxlength="1 " onkeyup="moveClick(this,'7')"></td>
+                    <td class="cell "><input class="input" id="7" type="text " maxlength="1 " onkeyup="moveClick(this,'8')"></td>
+                </tr>
+                <tr class="row ">
+                    <td class="cell "><input class="input " id="8" type="text " maxlength="1 " onkeyup="moveClick(this,'9')"></td>
+                    <td class="cell "><input class="input " id="9" type="text " maxlength="1 " onkeyup="moveClick(this,'10')"></td>
+                    <td class="cell "><input class="input " id="10" type="text " maxlength="1 " onkeyup="moveClick(this,'11')"></td>
+                    <td class="cell "><input class="input " id="11" type="text " maxlength="1 " onkeyup="moveClick(this,'12')"></td>
+                </tr>
+                <tr class="row ">
+                    <td class="cell "><input class="input " id="12" type="text " maxlength="1" onkeyup="moveClick(this,'13')"></td>
+                    <td class="cell "><input class="input " id="13" type="text " maxlength="1" onkeyup="moveClick(this,'14')"></td>
+                    <td class="cell "><input class="input " id="14" type="text " maxlength="1" onkeyup="moveClick(this,'15')"></td>
+                    <td class="cell "><input class="input " id="15" type="text " maxlength="1"></td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <div class="columns is-centered is-light" id="Start">
+                <button class="button is-primary " id="StartButton">
+            Start Over
+        </button></div>
+        </div>
+        </div>
+        <div class="" id="Section">
+
+        </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+
+    <div class="container py-5  has-text-dark has-text-centered" id="hintButton">
+    </div>
+    
+    <footer class="footer py-5 has-background-light has-text-dark" id="footer">
+        <div class="content has-text-centered mt-auto">
+            <p>&copy;MKF</p>
+        </div>
+
+    </footer>
+    <script src="wordle.js "></script>
+</body>
+
+</html>
